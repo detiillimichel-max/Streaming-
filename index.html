@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamingTV OIO - Edge Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">OIO STREAMING & EDGE</div>
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('home')">Home</button>
+            <button class="tab-btn" onclick="switchTab('carrosseis')">Carrosséis</button>
+            <button class="tab-btn" onclick="switchTab('ideias')">Ideias</button>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- HOME VIEW -->
+        <section id="home" class="view-section active">
+            <h2>Painel Principal (Home)</h2>
+            <div class="glass-card mb-4">
+                <h3>Integração com Edge Functions</h3>
+                <p>Consumo assíncrono modular otimizado para mobile e GitHub Pages.</p>
+            </div>
+            <h3 class="section-title">Destaques em Tempo Real</h3>
+            <div class="carousel-container" id="home-carousel">
+                <!-- Populado via app.js -->
+            </div>
+        </section>
+
+        <!-- CARROSSEIS VIEW -->
+        <section id="carrosseis" class="view-section">
+            <h2>Carrosséis de Conteúdo</h2>
+            <div class="category-block">
+                <h4>Streaming & Mídia</h4>
+                <div class="carousel-container" id="media-carousel"></div>
+            </div>
+            <div class="category-block mt-4">
+                <h4>Ferramentas & Sistema</h4>
+                <div class="carousel-container" id="tools-carousel"></div>
+            </div>
+        </section>
+
+        <!-- IDEIAS VIEW -->
+        <section id="ideias" class="view-section">
+            <h2>Repositório de Ideias</h2>
+            <div class="ideas-grid" id="ideas-grid">
+                <!-- Populado via app.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p>OIO Ecosystem &copy; 2026 — Arquitetura Modular Segura</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
